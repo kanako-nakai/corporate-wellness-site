@@ -97,7 +97,7 @@ export const communityContent: {
           ja: "産後の回復や女性のライフステージに寄り添い、身体を整えながら、自信や人とのつながりを取り戻す時間をつくります。",
           en: "Supportive programs that help women navigate postpartum recovery and life-stage transitions while rebuilding confidence and connection."
         },
-        image: "/images/portfolio-madre-bonita.jpg",
+        image: "/images/community-postpartum.jpg",
         alt: {
           ja: "産後ケアのグループウェルネスプログラム",
           en: "A supportive postpartum group wellness program"
