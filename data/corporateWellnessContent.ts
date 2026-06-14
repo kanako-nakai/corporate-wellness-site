@@ -15,8 +15,7 @@ export const corporateWellnessNavItems = [
   { id: "offer", label: { ja: "Offer", en: "Offer" } },
   { id: "why", label: { ja: "Why Kanako", en: "Why Kanako" } },
   { id: "experience", label: { ja: "Experience", en: "Experience" } },
-  { id: "formats", label: { ja: "Formats", en: "Formats" } },
-  { id: "contact", label: { ja: "Contact", en: "Contact" } }
+  { id: "formats", label: { ja: "Formats", en: "Formats" } }
 ] as const;
 
 export const corporateWellnessContent: {

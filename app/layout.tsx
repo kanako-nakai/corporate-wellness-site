@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kanako-nakai.com"),
-  title: "Kanako Nakai | Bilingual Wellness Educator & Program Designer",
+  metadataBase: new URL("https://for-corporate-web.vercel.app"),
+  title: {
+    default: "Corporate Wellness | Kanako Nakai",
+    template: "%s"
+  },
   description:
-    "Kanako Nakai is a Tokyo-based bilingual wellness educator and program designer specializing in women's wellness, postpartum recovery, active aging, functional movement, community wellness, and international facilitation.",
+    "Bilingual movement-based workplace wellness programs for international and local teams by Kanako Nakai.",
   keywords: [
     "Kanako Nakai",
     "仲井果菜子",
@@ -20,20 +23,25 @@ export const metadata: Metadata = {
     "Tokyo wellness"
   ],
   openGraph: {
-    title: "Kanako Nakai | Bilingual Wellness Educator & Program Designer",
+    title: "Corporate Wellness | Kanako Nakai",
     description:
-      "Designing wellness experiences that help people move, recover, connect, and thrive.",
+      "Movement-based wellbeing experiences that help international and local teams connect and work better together.",
+    url: "/",
     type: "website",
     locale: "ja_JP",
     alternateLocale: ["en_US"],
     images: [
       {
-        url: "/images/kanako-wellness-hero.png",
-        width: 1536,
+        url: "/images/corporate-wellness-hero-real-smile.png",
+        width: 1535,
         height: 1024,
-        alt: "A warm bilingual wellness workshop environment in Tokyo"
+        alt: "Women participating in a seated balance-ball wellness session"
       }
     ]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

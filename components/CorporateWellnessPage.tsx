@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import InquirySection from "@/components/InquirySection";
 import {
   corporateWellnessContent,
   corporateWellnessNavItems
@@ -61,12 +62,15 @@ export default function CorporateWellnessPage() {
           <strong>{siteContent.person.name}</strong>
         </a>
         <nav className="desktop-nav" aria-label="Corporate wellness navigation">
-          <a href="/">{locale === "ja" ? "Home" : "Home"}</a>
           {corporateWellnessNavItems.map((item) => (
             <a key={item.id} href={`#${item.id}`}>
               {item.label[t]}
             </a>
           ))}
+          <a className="supporting-nav-link" href="/community">
+            {locale === "ja" ? "Community" : "Community"}
+          </a>
+          <a href="#contact">{locale === "ja" ? "Contact" : "Contact"}</a>
         </nav>
         <div className="language-toggle" aria-label="Language">
           {(["ja", "en"] as Locale[]).map((item) => (
@@ -228,42 +232,7 @@ export default function CorporateWellnessPage() {
           </div>
         </section>
 
-        <section className="cw-contact-band" id="contact">
-          <div className="section-shell cw-contact-layout">
-            <div>
-              <p className="kicker">{corporateWellnessContent.contact.kicker[t]}</p>
-              <h2>{corporateWellnessContent.contact.title[t]}</h2>
-              <p>{corporateWellnessContent.contact.body[t]}</p>
-              <div className="hero-actions">
-                <a className="button primary" href="mailto:kanakonakai@gmail.com">
-                  {corporateWellnessContent.contact.primaryCta[t]}
-                </a>
-              </div>
-              <address className="cw-contact-links">
-                <a href="mailto:kanakonakai@gmail.com">
-                  Email: kanakonakai@gmail.com
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/kanako-nakai/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {locale === "ja"
-                    ? "LinkedInからのメッセージも歓迎です"
-                    : "LinkedIn messages are also welcome"}
-                </a>
-              </address>
-            </div>
-            <aside className="cw-contact-prompts" aria-label="Helpful inquiry details">
-              <h3>{locale === "ja" ? "相談時に共有しやすい内容" : "Helpful inquiry details"}</h3>
-              <ul>
-                {corporateWellnessContent.contact.prompts[t].map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </aside>
-          </div>
-        </section>
+        <InquirySection locale={locale} />
       </main>
 
       <footer className="site-footer">
@@ -272,6 +241,9 @@ export default function CorporateWellnessPage() {
             {siteContent.person.nameJa} / {siteContent.person.name}
           </p>
           <span>Workplace Wellness Program Designer</span>
+          <a className="footer-link" href="/community">
+            Community & Other Programs
+          </a>
         </div>
       </footer>
     </>
