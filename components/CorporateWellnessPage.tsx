@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import InquirySection from "@/components/InquirySection";
 import {
   corporateWellnessContent,
@@ -9,6 +8,7 @@ import {
 } from "@/data/corporateWellnessContent";
 import type { Locale } from "@/data/siteContent";
 import { siteContent } from "@/data/siteContent";
+import { localeHref, useLocalePreference } from "@/hooks/useLocalePreference";
 
 const localeNames: Record<Locale, string> = {
   ja: "JP",
@@ -16,12 +16,8 @@ const localeNames: Record<Locale, string> = {
 };
 
 export default function CorporateWellnessPage() {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useLocalePreference();
   const t = locale;
-
-  useEffect(() => {
-    document.documentElement.lang = locale === "ja" ? "ja" : "en";
-  }, [locale]);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -67,7 +63,10 @@ export default function CorporateWellnessPage() {
               {item.label[t]}
             </a>
           ))}
-          <a className="supporting-nav-link" href="/community">
+          <a
+            className="supporting-nav-link"
+            href={localeHref("/community", locale)}
+          >
             {locale === "ja" ? "Community" : "Community"}
           </a>
           <a href="#contact">{locale === "ja" ? "Contact" : "Contact"}</a>
@@ -241,7 +240,7 @@ export default function CorporateWellnessPage() {
             {siteContent.person.nameJa} / {siteContent.person.name}
           </p>
           <span>Workplace Wellness Program Designer</span>
-          <a className="footer-link" href="/community">
+          <a className="footer-link" href={localeHref("/community", locale)}>
             Community & Other Programs
           </a>
         </div>

@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import InquirySection from "@/components/InquirySection";
 import { communityContent } from "@/data/communityContent";
 import type { Locale } from "@/data/siteContent";
 import { siteContent } from "@/data/siteContent";
+import { localeHref, useLocalePreference } from "@/hooks/useLocalePreference";
 
 const localeNames: Record<Locale, string> = {
   ja: "JP",
@@ -13,12 +13,8 @@ const localeNames: Record<Locale, string> = {
 };
 
 export default function CommunityPage() {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useLocalePreference();
   const t = locale;
-
-  useEffect(() => {
-    document.documentElement.lang = locale === "ja" ? "ja" : "en";
-  }, [locale]);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -48,12 +44,16 @@ export default function CommunityPage() {
         Skip to content
       </a>
       <header className="site-header corporate-header">
-        <a className="brand" href="/" aria-label="Kanako Nakai home">
+        <a
+          className="brand"
+          href={localeHref("/", locale)}
+          aria-label="Kanako Nakai home"
+        >
           <span>{siteContent.person.nameJa}</span>
           <strong>{siteContent.person.name}</strong>
         </a>
         <nav className="desktop-nav" aria-label="Community programs navigation">
-          <a href="/">{locale === "ja" ? "Corporate Wellness" : "Corporate Wellness"}</a>
+          <a href={localeHref("/", locale)}>Corporate Wellness</a>
           <a href="#programs">{locale === "ja" ? "Programs" : "Programs"}</a>
           <a href="#context">{locale === "ja" ? "Connection" : "Connection"}</a>
           <a href="#contact">{locale === "ja" ? "Contact" : "Contact"}</a>
@@ -88,7 +88,7 @@ export default function CommunityPage() {
             <h1 id="community-hero-title">{communityContent.hero.title[t]}</h1>
             <p>{communityContent.hero.lead[t]}</p>
             <div className="hero-actions">
-              <a className="button primary" href="/#offer">
+              <a className="button primary" href={localeHref("/#offer", locale)}>
                 {communityContent.hero.primaryCta[t]}
               </a>
               <a className="button secondary" href="#programs">
@@ -133,7 +133,7 @@ export default function CommunityPage() {
             <div>
               <h2>{communityContent.context.title[t]}</h2>
               <p>{communityContent.context.body[t]}</p>
-              <a className="text-link" href="/">
+              <a className="text-link" href={localeHref("/", locale)}>
                 {communityContent.context.cta[t]}
               </a>
             </div>
@@ -149,7 +149,7 @@ export default function CommunityPage() {
             {siteContent.person.nameJa} / {siteContent.person.name}
           </p>
           <span>Workplace Wellness Program Designer</span>
-          <a className="footer-link" href="/">
+          <a className="footer-link" href={localeHref("/", locale)}>
             Corporate Wellness
           </a>
         </div>
