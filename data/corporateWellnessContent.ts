@@ -257,7 +257,7 @@ export const corporateWellnessContent: {
         },
         body: {
           ja: "国際色豊かな会員向けに、英語でのウェルネスプログラムを担当。Fitball、FloatFit、機能改善エクササイズなど、多様な参加者が楽しめるクラスを提供。",
-          en: "Fitball, FloatFit, and functional conditioning instruction."
+          en: "Leads group wellness programs in English for the club's international membership community, working with participants across diverse age groups. Her Fitball, FloatFit, and functional conditioning classes create enjoyable and accessible experiences for people with a wide range of fitness backgrounds."
         }
       },
       {
@@ -303,11 +303,11 @@ export const corporateWellnessContent: {
       {
         title: {
           ja: "マドレボニータでの産後ケア指導 約11年",
-          en: "Approximately 11 Years of Postpartum Care Instruction"
+          en: "Madre Bonita | Approximately 11 Years in Postpartum Care"
         },
         body: {
           ja: "出産後の身体的回復だけでなく、心身のコンディションを整え、人とのつながりや自分らしさを取り戻していくプロセスを支援。企業・自治体での復職支援講座や指導者育成を通じて、多様なライフステージを支える実践を重ねる。",
-          en: "Postpartum recovery instruction and instructor development with Madre Bonita."
+          en: "Over approximately 11 years at Madre Bonita, Kanako supported postpartum physical recovery and overall wellbeing, helping participants reconnect with themselves and others. Her work also included delivering return-to-work programs for companies and local governments, as well as training and mentoring instructors."
         }
       }
     ]
