@@ -1297,6 +1297,32 @@ h1 span {
   line-height: 1.72;
 }
 
+.linkedin-profile-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: rgba(255, 253, 248, 0.72);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 253, 248, 0.3);
+  text-underline-offset: 4px;
+}
+
+.linkedin-profile-link::after {
+  content: "↗";
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.linkedin-profile-link:hover,
+.linkedin-profile-link:focus-visible {
+  color: var(--paper);
+  text-decoration-color: currentColor;
+}
+
 .cw-certifications {
   border-top: 1px solid rgba(255, 253, 248, 0.2);
   padding-top: 20px;
@@ -1431,6 +1457,10 @@ h1 span {
   text-decoration: underline;
   text-decoration-color: rgba(255, 253, 248, 0.32);
   text-underline-offset: 4px;
+}
+
+.cw-contact-links .linkedin-profile-link {
+  margin-top: 0;
 }
 
 .cw-contact-links a:hover,

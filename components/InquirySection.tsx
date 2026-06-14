@@ -1,5 +1,6 @@
 import { corporateWellnessContent } from "@/data/corporateWellnessContent";
 import type { Locale } from "@/data/siteContent";
+import LinkedInProfileLink from "@/components/LinkedInProfileLink";
 
 type InquirySectionProps = {
   locale: Locale;
@@ -24,15 +25,7 @@ export default function InquirySection({ locale }: InquirySectionProps) {
             <a href="mailto:kanakonakai@gmail.com">
               Email: kanakonakai@gmail.com
             </a>
-            <a
-              href="https://www.linkedin.com/in/kanako-nakai/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {locale === "ja"
-                ? "LinkedInからのメッセージも歓迎です"
-                : "LinkedIn messages are also welcome"}
-            </a>
+            <LinkedInProfileLink locale={locale} />
           </address>
         </div>
         <aside className="cw-contact-prompts" aria-label="Helpful inquiry details">

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import InquirySection from "@/components/InquirySection";
+import LinkedInProfileLink from "@/components/LinkedInProfileLink";
 import {
   corporateWellnessContent,
   corporateWellnessNavItems
@@ -183,6 +184,7 @@ export default function CorporateWellnessPage() {
                     {corporateWellnessContent.experience.profile.title[t]}
                   </p>
                   <p>{corporateWellnessContent.experience.profile.bio[t]}</p>
+                  <LinkedInProfileLink locale={locale} />
                 </div>
                 <div className="cw-certifications">
                   <h4>
