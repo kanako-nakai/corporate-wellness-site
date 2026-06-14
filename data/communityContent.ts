@@ -78,7 +78,7 @@ export const communityContent: {
           ja: "バランスボール、モビリティ、機能的な身体づくりを組み合わせ、年齢を重ねても楽しく動き続けられる体験を設計します。",
           en: "Joyful, sustainable movement experiences combining fitball work, mobility, and functional conditioning for active aging."
         },
-        image: "/images/kanako-wellness-hero.png",
+        image: "/images/community-active-aging.jpg",
         alt: {
           ja: "バランスボールを使ったウェルネスプログラム",
           en: "A fitball-based wellness program"
@@ -116,7 +116,7 @@ export const communityContent: {
           ja: "国際的なウェルネスイベントの日本での連携・企画運営を通じて、地域と世界、多様な参加者をつなぐ体験をつくります。",
           en: "Connecting local participation with an international wellness movement through partnerships, planning, and event leadership in Japan."
         },
-        image: "/images/portfolio-world-wellness-weekend.jpg",
+        image: "/images/community-world-wellness-weekend.jpg",
         alt: {
           ja: "World Wellness Weekend Japanの活動",
           en: "World Wellness Weekend Japan activity"
@@ -135,7 +135,7 @@ export const communityContent: {
           ja: "水上での運動ならではの楽しさと挑戦を活かし、参加者が自然に集中し、交流できるウェルネス体験を届けます。",
           en: "Aquatic wellness experiences that use the enjoyment and challenge of movement on water to encourage focus, confidence, and connection."
         },
-        image: "/images/portfolio-floatfit.jpg",
+        image: "/images/community-floatfit.jpg",
         alt: {
           ja: "FloatFitの水上ウェルネス体験",
           en: "A FloatFit aquatic wellness experience"
@@ -154,7 +154,7 @@ export const communityContent: {
           ja: "ミッドライフ女性が安心して身体を動かし、話し、創造性を楽しみながらつながれるコミュニティウェルネスの取り組みです。",
           en: "A community wellness initiative where midlife women can move, talk, create, and connect in a welcoming environment."
         },
-        image: "/images/portfolio-obabu.jpg",
+        image: "/images/community-obabu.jpg",
         alt: {
           ja: "OBABUのコミュニティウェルネス活動",
           en: "An OBABU community wellness activity"

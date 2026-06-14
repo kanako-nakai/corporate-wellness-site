@@ -76,7 +76,7 @@ export default function CommunityPage() {
         <section className="community-hero" aria-labelledby="community-hero-title">
           <Image
             className="community-hero-image"
-            src="/images/kanako-wellness-hero.png"
+            src="/images/community-hero-real.jpg"
             alt=""
             fill
             priority

@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     alternateLocale: ["en_US"],
     images: [
       {
-        url: "/images/kanako-wellness-hero.png",
-        width: 1536,
-        height: 1024,
+        url: "/images/community-hero-real.jpg",
+        width: 2332,
+        height: 1556,
         alt: "Community wellness program by Kanako Nakai"
       }
     ]
