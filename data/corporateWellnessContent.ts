@@ -265,7 +265,7 @@ export const corporateWellnessContent: {
           en: "Sony Interactive Entertainment"
         },
         body: {
-          ja: "ゲーム開発部門向けに、ランチタイムのオンラインウェルネスプログラムを企画・実施。バランスボールを活用し、集中力の回復や長時間のデスクワークによる身体負担の軽減をサポート。",
+          ja: "リモートワークの社員様向けに、ランチタイムのオンラインウェルネスプログラムを企画・実施。バランスボールを活用し、集中力の回復や長時間のデスクワークによる身体負担の軽減をサポート。",
           en: "Designed and delivered an online lunchtime wellness program for a game development team, using balance balls to help restore focus and reduce the physical strain of prolonged desk work."
         }
       },
