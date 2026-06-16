@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     alternateLocale: ["en_US"],
     images: [
       {
-        url: "/images/corporate-wellness-hero-real-smile.png",
-        width: 1535,
-        height: 1024,
-        alt: "Women participating in a seated balance-ball wellness session"
+        url: "/images/corporate-wellness-hero-balance-balls.jpg",
+        width: 2600,
+        height: 1950,
+        alt: "Red balance balls arranged in a natural-light workplace wellness space"
       }
     ]
   }
