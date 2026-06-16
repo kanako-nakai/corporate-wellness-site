@@ -90,7 +90,7 @@ export default function CorporateWellnessPage() {
         <section className="cw-hero" id="top" aria-labelledby="cw-hero-title">
           <Image
             className="cw-hero-image"
-            src="/images/corporate-wellness-hero-balance-balls.jpg"
+            src="/images/corporate-wellness-hero-session.jpg"
             alt=""
             fill
             priority
