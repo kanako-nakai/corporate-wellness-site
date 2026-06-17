@@ -1093,20 +1093,16 @@ h1 span {
 }
 
 .cw-hero-image {
-  filter: brightness(0.8) saturate(0.74) contrast(0.86) blur(1px);
   object-fit: cover;
   object-position: center 58%;
-  transform: scale(1.04);
-  transform-origin: center;
 }
 
 .cw-hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(18, 25, 22, 0.96) 0%, rgba(18, 25, 22, 0.86) 46%, rgba(18, 25, 22, 0.48) 100%),
-    linear-gradient(180deg, rgba(18, 25, 22, 0.48) 0%, rgba(18, 25, 22, 0.28) 48%, rgba(18, 25, 22, 0.78) 100%),
-    linear-gradient(0deg, rgba(18, 25, 22, 0.14), rgba(18, 25, 22, 0.14));
+    linear-gradient(90deg, rgba(22, 29, 25, 0.92) 0%, rgba(22, 29, 25, 0.76) 46%, rgba(22, 29, 25, 0.22) 100%),
+    linear-gradient(180deg, rgba(22, 29, 25, 0.34) 0%, rgba(22, 29, 25, 0.2) 52%, rgba(22, 29, 25, 0.66) 100%);
 }
 
 .cw-hero-content {
@@ -1574,8 +1570,7 @@ h1 span {
 
 @media (max-width: 700px) {
   .cw-hero-image {
-    object-position: 60% 58%;
-    transform: scale(1.08);
+    object-position: 50% 60%;
   }
 
   .cw-section,
