@@ -3,12 +3,14 @@
 import Image from "next/image";
 import InquirySection from "@/components/InquirySection";
 import LinkedInProfileLink from "@/components/LinkedInProfileLink";
+import WorldWellnessWeekendSection from "@/components/WorldWellnessWeekendSection";
 import {
   corporateWellnessContent,
   corporateWellnessNavItems
 } from "@/data/corporateWellnessContent";
 import type { Locale } from "@/data/siteContent";
 import { siteContent } from "@/data/siteContent";
+import { worldWellnessWeekendContent } from "@/data/worldWellnessWeekendContent";
 import { localeHref, useLocalePreference } from "@/hooks/useLocalePreference";
 
 const localeNames: Record<Locale, string> = {
@@ -115,8 +117,18 @@ export default function CorporateWellnessPage() {
                 {corporateWellnessContent.hero.secondaryCta[t]}
               </a>
             </div>
+            <a
+              className="cw-hero-event-pill"
+              href="#world-wellness-weekend"
+              aria-label={`${worldWellnessWeekendContent.heroNotice.title[t]}: ${worldWellnessWeekendContent.heroNotice.body[t]}`}
+            >
+              <span>{worldWellnessWeekendContent.heroNotice.title[t]}</span>
+              <small>{worldWellnessWeekendContent.heroNotice.body[t]}</small>
+            </a>
           </div>
         </section>
+
+        <WorldWellnessWeekendSection locale={locale} />
 
         <section className="cw-section cw-offer-section" id="offer">
           <div className="section-shell">
