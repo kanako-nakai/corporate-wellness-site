@@ -28,7 +28,7 @@ export const worldWellnessWeekendContent: {
   secondaryCta: LocalizedText;
   note: LocalizedText;
 } = {
-  logoSrc: "/images/world-wellness-weekend-logo-placeholder.svg",
+  logoSrc: "/images/world-wellness-weekend-logo.png",
   heroNotice: {
     title: {
       ja: "World Wellness Weekend 2026",

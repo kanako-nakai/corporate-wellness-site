@@ -1272,11 +1272,11 @@ h1 span {
 
 .cw-www-logo-panel {
   display: grid;
-  width: min(100%, 230px);
+  width: min(100%, 280px);
   justify-self: start;
   border: 1px solid rgba(40, 95, 80, 0.14);
   border-radius: 8px;
-  padding: 16px;
+  padding: 18px;
   background: rgba(255, 253, 248, 0.72);
   box-shadow: 0 18px 42px rgba(32, 38, 34, 0.08);
 }
@@ -1763,7 +1763,7 @@ h1 span {
   }
 
   .cw-www-intro {
-    grid-template-columns: minmax(0, 1fr) 230px;
+    grid-template-columns: minmax(0, 1fr) 280px;
   }
 
   .cw-www-logo-panel {

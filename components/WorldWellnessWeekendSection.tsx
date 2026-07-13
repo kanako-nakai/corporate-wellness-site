@@ -53,8 +53,8 @@ export default function WorldWellnessWeekendSection({
               src={worldWellnessWeekendContent.logoSrc}
               alt={
                 locale === "ja"
-                  ? "World Wellness Weekend公式ロゴ差し替え用プレースホルダー"
-                  : "Placeholder for the official World Wellness Weekend logo"
+                  ? "World Wellness Weekend公式ロゴ"
+                  : "World Wellness Weekend official logo"
               }
             />
           </div>
