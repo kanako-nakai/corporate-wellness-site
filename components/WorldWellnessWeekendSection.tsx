@@ -29,6 +29,21 @@ export default function WorldWellnessWeekendSection({
             {worldWellnessWeekendContent.intro.map((paragraph) => (
               <p key={paragraph.en}>{paragraph[t]}</p>
             ))}
+            <p className="cw-www-value">
+              {worldWellnessWeekendContent.valueStatement[t]}
+            </p>
+            <ul
+              className="cw-www-stats"
+              aria-label={
+                locale === "ja"
+                  ? "World Wellness Weekendの開催規模"
+                  : "World Wellness Weekend scale"
+              }
+            >
+              {worldWellnessWeekendContent.stats.map((stat) => (
+                <li key={stat.en}>{stat[t]}</li>
+              ))}
+            </ul>
             <span className="cw-www-badge">
               {worldWellnessWeekendContent.badge[t]}
             </span>

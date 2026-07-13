@@ -16,6 +16,8 @@ export const worldWellnessWeekendContent: {
   eyebrow: LocalizedText;
   heading: LocalizedText;
   intro: LocalizedText[];
+  valueStatement: LocalizedText;
+  stats: LocalizedText[];
   badge: LocalizedText;
   subheading: LocalizedText;
   options: WeekendOption[];
@@ -42,17 +44,39 @@ export const worldWellnessWeekendContent: {
     en: "WORLD WELLNESS WEEKEND 2026"
   },
   heading: {
-    ja: "今年のWorld Wellness Weekendを、職場の皆さんと一緒にお祝いしませんか？",
-    en: "You’re invited to celebrate wellbeing at your workplace."
+    ja: "今年のWorld Wellness Weekendに、職場の皆さんも参加しませんか？",
+    en: "You’re invited to join World Wellness Weekend with your team."
   },
   intro: [
     {
-      ja: "9月18日〜20日、世界各地でウェルネスを祝うWorld Wellness Weekendが開催されます。",
-      en: "From September 18–20, organizations around the world will come together to celebrate World Wellness Weekend."
+      ja: "9月18日〜20日に開催されるWorld Wellness Weekendは、世界160か国・1,000会場以上で同時開催される世界最大級のウェルネスイベントです。",
+      en: "World Wellness Weekend is one of the world’s largest wellbeing events, taking place simultaneously across more than 160 countries and over 1,000 venues from September 18–20."
+    },
+    {
+      ja: "企業、ホテル、フィットネス施設、スパ、地域コミュニティなどが、それぞれの形でウェルネスをテーマにした無料イベントを開催します。",
+      en: "Companies, hotels, fitness clubs, spas, and local communities around the world host complimentary wellbeing activities in their own unique way."
     },
     {
       ja: "World Wellness Weekendアンバサダーとして、企業・団体の皆さまにご参加いただける無料の職場向けウェルネスセッションをご用意しています。日本語・英語・バイリンガルで実施可能です。",
-      en: "As a World Wellness Weekend Ambassador, I am inviting companies and teams to take part through a complimentary workplace wellness session, available in English, Japanese, or both."
+      en: "As a World Wellness Weekend Ambassador, I am inviting companies and organizations to take part through complimentary workplace wellness sessions, available in English, Japanese, or bilingually."
+    }
+  ],
+  valueStatement: {
+    ja: "世界的なウェルネスムーブメントに参加することで、社員のウェルビーイングを支えるだけでなく、ウェルネスを大切にする企業姿勢を社内外に発信する機会にもなります。",
+    en: "By joining this global wellbeing movement, your organization can support employee wellbeing while also demonstrating its commitment to wellness both internally and externally."
+  },
+  stats: [
+    {
+      ja: "160か国以上",
+      en: "160+ countries"
+    },
+    {
+      ja: "1,000会場以上",
+      en: "1,000+ venues"
+    },
+    {
+      ja: "世界同時開催",
+      en: "Global participation"
     }
   ],
   badge: {
@@ -60,8 +84,8 @@ export const worldWellnessWeekendContent: {
     en: "Complimentary sessions for World Wellness Weekend 2026"
   },
   subheading: {
-    ja: "チームに合う体験をお選びください。",
-    en: "Choose the experience that fits your team."
+    ja: "こんな形でご参加いただけます。",
+    en: "Choose how your team would like to participate."
   },
   options: [
     {
@@ -102,8 +126,8 @@ export const worldWellnessWeekendContent: {
     }
   ],
   closingHeading: {
-    ja: "World Wellness Weekendをご一緒できたら嬉しいです。",
-    en: "Let’s celebrate World Wellness Weekend together."
+    ja: "今年は、皆さんの職場もこの世界的なムーブメントに加わってみませんか？",
+    en: "This year, we would love to welcome your team as part of this global movement."
   },
   closingText: {
     ja: "運動経験は問いません。参加者、職場環境、開催目的に合わせて内容を調整します。",

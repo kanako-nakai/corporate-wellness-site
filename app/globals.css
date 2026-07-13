@@ -1226,6 +1226,36 @@ h1 span {
   line-height: 1.82;
 }
 
+.cw-www-intro .cw-www-value {
+  max-width: 800px;
+  margin: 18px 0 18px;
+  border-left: 3px solid rgba(216, 110, 87, 0.58);
+  padding: 13px 0 13px 18px;
+  color: var(--green);
+  background: linear-gradient(90deg, rgba(220, 232, 223, 0.42), transparent 72%);
+  font-weight: 700;
+}
+
+.cw-www-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.cw-www-stats li {
+  border: 1px solid rgba(40, 95, 80, 0.15);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--green);
+  background: rgba(255, 253, 248, 0.64);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
 .cw-www-badge {
   display: inline-flex;
   width: fit-content;
