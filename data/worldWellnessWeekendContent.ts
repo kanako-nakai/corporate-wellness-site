@@ -24,7 +24,6 @@ export const worldWellnessWeekendContent: {
   closingHeading: LocalizedText;
   closingText: LocalizedText;
   primaryCta: LocalizedText;
-  emailSubject: LocalizedText;
   secondaryCta: LocalizedText;
   note: LocalizedText;
 } = {
@@ -44,7 +43,7 @@ export const worldWellnessWeekendContent: {
     en: "WORLD WELLNESS WEEKEND 2026"
   },
   heading: {
-    ja: "今年のWorld Wellness Weekendに、職場の皆さんも参加しませんか？",
+    ja: "今年は、皆さんの職場もこの世界的なウェルネスムーブメントに加わってみませんか？",
     en: "You’re invited to join World Wellness Weekend with your team."
   },
   intro: [
@@ -134,12 +133,8 @@ export const worldWellnessWeekendContent: {
     en: "No advanced fitness level is required. Each session can be adapted to the team, workplace, and occasion."
   },
   primaryCta: {
-    ja: "無料セッションについて相談する",
-    en: "Ask about a complimentary session"
-  },
-  emailSubject: {
-    ja: "World Wellness Weekend 職場向けセッションについて",
-    en: "World Wellness Weekend Workplace Session"
+    ja: "まずは相談してみる",
+    en: "Let’s talk"
   },
   secondaryCta: {
     ja: "LinkedInを見る",

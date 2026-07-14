@@ -9,9 +9,6 @@ export default function WorldWellnessWeekendSection({
   locale
 }: WorldWellnessWeekendSectionProps) {
   const t = locale;
-  const emailHref = `mailto:kanakonakai@gmail.com?subject=${encodeURIComponent(
-    worldWellnessWeekendContent.emailSubject[t]
-  )}`;
 
   return (
     <section
@@ -81,7 +78,7 @@ export default function WorldWellnessWeekendSection({
             <p>{worldWellnessWeekendContent.closingText[t]}</p>
           </div>
           <div className="cw-www-actions">
-            <a className="button primary" href={emailHref}>
+            <a className="button primary" href="#inquiry-form">
               {worldWellnessWeekendContent.primaryCta[t]}
             </a>
             <a
