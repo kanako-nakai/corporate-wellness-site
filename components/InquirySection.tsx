@@ -17,11 +17,6 @@ export default function InquirySection({ locale }: InquirySectionProps) {
           <p className="kicker">{corporateWellnessContent.contact.kicker[t]}</p>
           <h2>{corporateWellnessContent.contact.title[t]}</h2>
           <p>{corporateWellnessContent.contact.body[t]}</p>
-          <div className="hero-actions">
-            <a className="button primary" href="#inquiry-form">
-              {corporateWellnessContent.contact.primaryCta[t]}
-            </a>
-          </div>
           <address className="cw-contact-links">
             <LinkedInProfileLink locale={locale} />
           </address>

@@ -43,7 +43,7 @@ export const worldWellnessWeekendContent: {
     en: "WORLD WELLNESS WEEKEND 2026"
   },
   heading: {
-    ja: "今年は、皆さんの職場もこの世界的なウェルネスムーブメントに加わってみませんか？",
+    ja: "皆さんの職場も、世界的なウェルネスムーブメントに加わってみませんか？",
     en: "You’re invited to join World Wellness Weekend with your team."
   },
   intro: [
